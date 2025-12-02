@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <li><a href="contact.html" class="active">Contact</a></li>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Naufal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Library -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #00d2ff;
+        }
+
+        /* CONTACT HEADER */
+        .contact-header {
+            text-align: center;
+            padding: 80px 30px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .contact-header h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+        .contact-header p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        /* CONTACT CONTENT */
+        .contact-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            animation: fadeIn 1.3s ease-in-out;
+        }
+
+        /* LEFT SIDE */
+        .contact-info {
+            width: 45%;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 35px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .info-box {
+            margin-bottom: 25px;
+        }
+
+        .info-box i {
+            font-size: 28px;
+            margin-right: 15px;
+            color: #00d2ff;
+        }
+
+        .info-box h3 {
+            margin: 5px 0;
+        }
+
+        /* RIGHT SIDE (FORM) */
+        .contact-form {
+            width: 45%;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 35px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 12px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            cursor: pointer;
+            color: black;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-40px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* CHATBOT SECTION */
+        .chatbot-box {
+            margin: 80px auto;
+            width: 90%;
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+            animation: fadeIn 1.4s ease-in-out;
+        }
+
+        .chatbot-box h2 {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Naufal.dev</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="contact-header">
+        <h1>Let’s Connect</h1>
+        <p>Have a project in mind? Want to collaborate? Or just say hi? Reach out.</p>
+    </div>
+
+    <!-- CONTACT CONTENT -->
+    <div class="contact-container">
+
+        <!-- LEFT INFO -->
+        <div class="contact-info">
+            <div class="info-box">
+                <i class="fas fa-user"></i>
+                <h3>Name</h3>
+                <p>Mohamed Naufal</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>naufal@example.com</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Coimbatore, India</p>
+            </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <form class="contact-form">
+            <h2>Send a Message</h2>
+
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+    <!-- CHATBOT SECTION -->
+    <div class="chatbot-box">
+        <h2>Chat with My AI Assistant</h2>
+        <p>Ask anything — projects, skills, resume, guidance.</p>
+
+        <!-- Replace with your Chatbase agent ID -->
+        <iframe 
+            src="https://www.chatbase.co/chatbot-iframe/vj9wo9ZOzEjS2jXKOXaUr"
+            width="100%"
+            height="500"
+            style="border-radius: 12px; border: none;">
+        </iframe>
+    </div>
+<nav class="navbar glass">
+    <h2 class="logo">Naufal.dev</h2>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
